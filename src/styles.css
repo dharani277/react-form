@@ -1,0 +1,93 @@
+body {
+  background: #0e101c;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+h2 {
+  font-weight: 300px;
+  color: white;
+  margin-top: -1000px;
+  margin-left: 800px;
+}
+p {
+  color: #bf1650;
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 24px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-left: 24px;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 100px;
+}
+
+button {
+  background: blue;
+  color: white;
+  text-transform: uppercase;
+  border: "1px solid lightblue";
+  margin-top: 40px;
+  height: 50px;
+  margin-left: 100px;
+  font-size: 16px;
+  font-weight: 100;
+  width: 300px;
+  letter-spacing: 10px;
+}
+
+button[type="button"] {
+  display: block;
+  appearance: none;
+  background: #333;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+table,
+th,
+td {
+  margin-top: -1166px;
+  border: 1px solid whitesmoke;
+  border-collapse: collapse;
+  width: 1000px;
+  margin-left: 570px;
+  color: white;
+  text-align: center;
+}
