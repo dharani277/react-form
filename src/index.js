@@ -44,9 +44,7 @@ function App() {
               pattern: /^[A-Za-z]+$/i,
             })}
           />
-          {_.get("lastName.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("lastName.type", errors) === "required"}
           {_.get("lastName.type", errors) === "pattern" && (
             <p>Alphabetical characters only</p>
           )}
@@ -58,9 +56,7 @@ function App() {
               pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/,
             })}
           />
-          {_.get("email.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("email.type", errors) === "required"}
           {_.get("email.type", errors) === "pattern" && <p>Invalid Email ID</p>}
           <label>Password</label>
           <input
@@ -71,9 +67,7 @@ function App() {
               pattern: /^[A-Za-z0-9`!@#$%^&*]+$/i,
             })}
           />
-          {_.get("password.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("password.type", errors) === "required"}
           {_.get("password.type", errors) === "pattern"}
           <label>Confirm Password</label>
           <input
@@ -84,17 +78,13 @@ function App() {
               pattern: /^[A-Za-z0-9`!@#$%^&*]+$/i,
             })}
           />
-          {_.get("retype.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("retype.type", errors) === "required"}
           {_.get("retype.type", errors) === "pattern"}
           {watch("password") !== watch("retype") && (
             <p>Enter the Confirm Password</p>
           )}
           <label>Marital Status</label>
-          {_.get("status.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("status.type", errors) === "required"}
           <label>
             Single
             <input
@@ -132,9 +122,7 @@ function App() {
             />
           </label>
           <label>Choice of Food</label>
-          {_.get("food.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("food.type", errors) === "required"}
           <label>
             Veg Meals{" "}
             <input
@@ -178,9 +166,7 @@ function App() {
             />
           </label>
           <label>Country</label>
-          {_.get("Country.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("Country.type", errors) === "required"}
           <select
             style={{ width: "200px", marginLeft: "24px" }}
             name="Country"
@@ -195,9 +181,7 @@ function App() {
             <option value="America">America</option>
           </select>
           <label>State</label>
-          {_.get("State.type", errors) === "required" && (
-            <p>This field is required</p>
-          )}
+          {_.get("State.type", errors) === "required"}
           <select
             style={{ width: "200px", marginLeft: "24px" }}
             name="State"
